@@ -1,5 +1,5 @@
 /*!
- * Copyright (c) 2013-Now 华夏ERP All rights reserved.
+ * Copyright (c) 2013-Now ERP All rights reserved.
  * 
  * 通用公共JavaScript，注意：项目请不要修改公共CSS样式，若需要新增或调整，请在common.js中覆盖
  * @author jishenghua

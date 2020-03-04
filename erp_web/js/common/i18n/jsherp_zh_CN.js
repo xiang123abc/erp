@@ -1,5 +1,5 @@
 /*!
- * Copyright (c) 2013-Now 华夏erp All rights reserved.
+ * Copyright (c) 2013-Now erp All rights reserved.
  *
  * @author jishenghua
  * @version 2019-09-14
