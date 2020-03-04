@@ -11,7 +11,7 @@
  Target Server Version : 50728
  File Encoding         : 65001
 
- Date: 02/03/2020 21:03:04
+ Date: 04/03/2020 13:06:43
 */
 
 SET NAMES utf8mb4;
@@ -589,7 +589,7 @@ CREATE TABLE `jsh_functions`  (
   `icon` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '图标',
   `delete_Flag` varchar(1) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT '0' COMMENT '删除标记，0未删除，1删除',
   PRIMARY KEY (`Id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 252 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '功能模块表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 245 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '功能模块表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of jsh_functions
@@ -703,7 +703,7 @@ CREATE TABLE `jsh_log`  (
   `tenant_id` bigint(20) DEFAULT NULL COMMENT '租户id',
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `FKF2696AA13E226853`(`userID`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 6357 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '操作日志' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 6358 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '操作日志' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of jsh_log
@@ -1141,6 +1141,7 @@ INSERT INTO `jsh_log` VALUES (6353, 120, '序列号', '0:0:0:0:0:0:0:1', '2020-0
 INSERT INTO `jsh_log` VALUES (6354, 120, '机构', '0:0:0:0:0:0:0:1', '2020-03-02 21:02:08', 0, '修改,id:6机构', NULL, NULL);
 INSERT INTO `jsh_log` VALUES (6355, 120, '机构', '0:0:0:0:0:0:0:1', '2020-03-02 21:02:30', 0, '修改,id:8机构', NULL, NULL);
 INSERT INTO `jsh_log` VALUES (6356, 120, '机构', '0:0:0:0:0:0:0:1', '2020-03-02 21:02:37', 0, '删除,id:10,11机构', NULL, NULL);
+INSERT INTO `jsh_log` VALUES (6357, 120, '用户', '0:0:0:0:0:0:0:1', '2020-03-02 21:16:51', 0, '登录,id:120用户', NULL, NULL);
 
 -- ----------------------------
 -- Table structure for jsh_material
@@ -1663,7 +1664,7 @@ CREATE TABLE `jsh_tenant`  (
   `bills_num_limit` int(11) DEFAULT NULL COMMENT '单据数量限制',
   `create_time` datetime(0) DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 81 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '租户' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 23 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '租户' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of jsh_tenant
@@ -1677,6 +1678,7 @@ INSERT INTO `jsh_tenant` VALUES (18, 126, '123123', 2, 200, NULL);
 INSERT INTO `jsh_tenant` VALUES (19, 127, '2345123', 2, 200, NULL);
 INSERT INTO `jsh_tenant` VALUES (20, 128, 'q12341243', 2, 200, NULL);
 INSERT INTO `jsh_tenant` VALUES (21, 130, 'jsh666', 2, 200, NULL);
+INSERT INTO `jsh_tenant` VALUES (22, 131, 'admin', 20, 200, NULL);
 
 -- ----------------------------
 -- Table structure for jsh_unit
@@ -1744,7 +1746,7 @@ INSERT INTO `jsh_user` VALUES (96, 'lili', 'lili', 'e10adc3949ba59abbe56e057f20f
 INSERT INTO `jsh_user` VALUES (113, 'yuyu123', 'yuyu123', 'e10adc3949ba59abbe56e057f20f883e', NULL, NULL, NULL, NULL, 1, 0, 0, NULL, NULL, 113);
 INSERT INTO `jsh_user` VALUES (115, 'laoba123', 'laoba123', 'e10adc3949ba59abbe56e057f20f883e', '33333', NULL, '', '', 1, 0, 0, '', NULL, 115);
 INSERT INTO `jsh_user` VALUES (116, 'gggg123', 'gggg123', 'e10adc3949ba59abbe56e057f20f883e', '', NULL, '', '', 1, 0, 1, '', NULL, 115);
-INSERT INTO `jsh_user` VALUES (120, '管理员', 'admin', 'e10adc3949ba59abbe56e057f20f883e', NULL, NULL, NULL, NULL, 1, 0, 0, NULL, NULL, NULL);
+INSERT INTO `jsh_user` VALUES (120, 'admin', 'admin', 'e10adc3949ba59abbe56e057f20f883e', NULL, NULL, NULL, NULL, 1, 0, 0, NULL, NULL, 131);
 INSERT INTO `jsh_user` VALUES (121, 'hhhh', 'hhhh', 'e10adc3949ba59abbe56e057f20f883e', '', NULL, '', '', 1, 0, 0, '', NULL, 115);
 INSERT INTO `jsh_user` VALUES (122, 'admin1', 'admin1', 'e10adc3949ba59abbe56e057f20f883e', '', NULL, '', '', 1, 0, 1, '', NULL, 63);
 INSERT INTO `jsh_user` VALUES (123, 'caoyuli', 'caoyuli', 'e10adc3949ba59abbe56e057f20f883e', NULL, NULL, NULL, NULL, 1, 0, 0, NULL, NULL, 123);
