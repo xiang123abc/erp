@@ -1,7 +1,7 @@
 # erp
 
 ### 介绍
-ERP进销存管理系统
+ERP网上平台
 
 ### 软件架构
 * 核心框架：SpringBoot 2.0.0
@@ -26,13 +26,8 @@ ERP进销存管理系统
 
 
 
-浏览器地址访问登录页面http://localhost:8080/login.html，  
+浏览器地址访问登录页面 http://xiang123.xyz/ 
+
 默认管理员账号：admin，密码为123456
 
-### 项目截图
 
-
-
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1206/113941_da66ab56_5340558.png "2019-12-05_082557.png")
-
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1206/113951_03ad5d86_5340558.png "2019-12-05_082637.png")
